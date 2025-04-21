@@ -247,7 +247,7 @@ export default function Home() {
               transition={{ delay: showIntro ? 2.5 : 0, duration: 0.8, ease: "easeOut" }}
             >
               <span className="block text-2xl sm:text-3xl text-[#a0a0a0] mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Hi, I'm
+                Hi, I&apos;m
               </span>
               <span className="block text-6xl sm:text-7xl font-bold text-[#e0e0e0]" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Kieran Jackson
