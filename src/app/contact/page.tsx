@@ -54,12 +54,12 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#e0e0e0] mb-8 text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <h1 className="text-3xl sm:text-5xl font-bold text-[#e0e0e0] mb-8 text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
               Get in Touch
             </h1>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#a0a0a0] mb-2">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-[#a0a0a0] mb-2">
                   Name
                 </label>
                 <input
@@ -69,12 +69,12 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-[#a0a0a0] mb-2">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-[#a0a0a0] mb-2">
                   Email
                 </label>
                 <input
@@ -84,12 +84,12 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-[#a0a0a0] mb-2">
+                <label htmlFor="subject" className="block text-xs sm:text-sm font-medium text-[#a0a0a0] mb-2">
                   Subject
                 </label>
                 <input
@@ -99,12 +99,12 @@ export default function Contact() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-[#a0a0a0] mb-2">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-[#a0a0a0] mb-2">
                   Message
                 </label>
                 <textarea
@@ -114,7 +114,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#1a1a1a] border border-[#1C4C2C] rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#1C4C2C]"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 />
               </div>
@@ -122,7 +122,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#1C4C2C] via-[#2C6C3C] to-[#1C4C2C] rounded-xl hover:opacity-90 transition-all duration-300 border border-[#1C4C2C]/50 shadow-xl hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-medium text-white bg-gradient-to-r from-[#1C4C2C] via-[#2C6C3C] to-[#1C4C2C] rounded-xl hover:opacity-90 transition-all duration-300 border border-[#1C4C2C]/50 shadow-xl hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}

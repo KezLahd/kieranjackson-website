@@ -147,8 +147,8 @@ export default function Home() {
   }, [])
 
   // Calculate responsive text size based on window width
-  const textSize = windowWidth < 640 ? 'text-5xl sm:text-6xl' : 'text-6xl'
-  const finalTextSize = 'text-6xl sm:text-7xl'
+  const textSize = windowWidth < 640 ? 'text-4xl sm:text-6xl' : 'text-6xl'
+  const finalTextSize = 'text-5xl sm:text-7xl'
 
   // Calculate movement distances based on window width
   const leftMovement = windowWidth < 640 ? 0 : 
@@ -246,15 +246,15 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: showIntro ? 2.5 : 0, duration: 0.8, ease: "easeOut" }}
             >
-              <span className="block text-2xl sm:text-3xl text-[#a0a0a0] mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <span className="block text-xl sm:text-3xl text-[#a0a0a0] mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Hi, I&apos;m
               </span>
-              <span className="block text-6xl sm:text-7xl font-bold text-[#e0e0e0]" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <span className="block text-5xl sm:text-7xl font-bold text-[#e0e0e0]" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Kieran Jackson
               </span>
             </motion.h1>
             <motion.p 
-              className="text-xl sm:text-2xl text-[#a0a0a0] max-w-2xl mx-auto mb-12" 
+              className="text-lg sm:text-2xl text-[#a0a0a0] max-w-2xl mx-auto mb-12" 
               style={{ fontFamily: 'Roboto, sans-serif' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -271,14 +271,14 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#1C4C2C] via-[#2C6C3C] to-[#1C4C2C] rounded-xl hover:opacity-90 transition-all duration-300 border border-[#1C4C2C]/50 shadow-xl hover:shadow-2xl"
+                className="px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-medium text-white bg-gradient-to-r from-[#1C4C2C] via-[#2C6C3C] to-[#1C4C2C] rounded-xl hover:opacity-90 transition-all duration-300 border border-[#1C4C2C]/50 shadow-xl hover:shadow-2xl"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 View Projects
               </motion.button>
               <Link 
                 href="/contact"
-                className="px-8 py-3 text-lg font-medium text-white border-2 border-[#1C4C2C] rounded-xl hover:bg-[#1C4C2C]/10 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-medium text-white border-2 border-[#1C4C2C] rounded-xl hover:bg-[#1C4C2C]/10 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 Get in Touch
@@ -291,7 +291,7 @@ export default function Home() {
         <section id="projects" className="py-24 border-b border-[#1C2C27]">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.h2 
-              className="text-4xl font-bold text-[#e0e0e0] mb-12 text-center" 
+              className="text-3xl sm:text-4xl font-bold text-[#e0e0e0] mb-12 text-center" 
               style={{ fontFamily: 'Inter, sans-serif' }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
