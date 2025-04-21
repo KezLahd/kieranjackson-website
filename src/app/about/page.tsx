@@ -53,8 +53,8 @@ export default function AboutPage() {
           <div className="p-6 rounded-xl border border-[#1C2C27] bg-[#0A1512]/10">
             <h2 className="text-2xl font-bold text-[#e0e0e0] mt-0 mb-4">Personal Interests</h2>
             <p className="text-[#a0a0a0] mb-0">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source
-              projects, or sharing my knowledge through blog posts and tutorials. I'm also passionate about
+              When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source
+              projects, or sharing my knowledge through blog posts and tutorials. I&apos;m also passionate about
               photography, hiking, and playing the guitar.
             </p>
           </div>
