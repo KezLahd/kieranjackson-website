@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +22,15 @@ export default function RootLayout({
           <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
-                <a href="/" className="text-xl font-bold text-white">Kieran Jackson</a>
+                <Link href="/" className="text-xl font-bold text-white hover:text-[#a0a0a0] transition-colors">
+                  Kieran Jackson
+                </Link>
               </div>
               <div className="flex items-center space-x-8">
-                <a href="/" className="text-[#e0e0e0] hover:text-white transition-colors">Home</a>
-                <a href="/projects" className="text-[#e0e0e0] hover:text-white transition-colors font-medium">Projects</a>
-                <a href="/about" className="text-[#e0e0e0] hover:text-white transition-colors">About</a>
-                <a href="/contact" className="text-[#e0e0e0] hover:text-white transition-colors">Contact</a>
+                <Link href="/" className="text-[#e0e0e0] hover:text-white transition-colors">Home</Link>
+                <Link href="/projects" className="text-[#e0e0e0] hover:text-white transition-colors font-medium">Projects</Link>
+                <Link href="/about" className="text-[#e0e0e0] hover:text-white transition-colors">About</Link>
+                <Link href="/contact" className="text-[#e0e0e0] hover:text-white transition-colors">Contact</Link>
               </div>
             </div>
           </div>

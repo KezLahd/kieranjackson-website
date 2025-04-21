@@ -6,10 +6,14 @@ export default function AboutPage() {
         
         <div className="prose prose-lg max-w-none prose-invert">
           <div className="p-6 rounded-xl border border-[#1C2C27] bg-[#0A1512]/10 mb-12">
-            <p className="text-xl text-[#a0a0a0] mb-0">
-              I'm a software developer passionate about creating elegant solutions to complex problems.
-              With expertise in full-stack development, I specialize in building modern web applications
-              and desktop software that deliver exceptional user experiences.
+            <p className="text-lg text-[#a0a0a0] mb-6">
+              I&apos;m a software developer with a passion for creating elegant solutions to complex problems.
+            </p>
+            <p className="text-lg text-[#a0a0a0] mb-6">
+              When I&apos;m not coding, you can find me exploring new technologies and contributing to open-source projects.
+            </p>
+            <p className="text-lg text-[#a0a0a0]">
+              I believe that great software isn&apos;t just about writing code; it&apos;s about understanding user needs and delivering solutions that make a difference.
             </p>
           </div>
 
